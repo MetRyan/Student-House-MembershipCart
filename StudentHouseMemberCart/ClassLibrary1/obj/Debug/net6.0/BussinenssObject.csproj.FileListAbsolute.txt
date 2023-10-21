@@ -1,0 +1,14 @@
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.deps.json
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.runtimeconfig.json
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.csproj.AssemblyReference.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.AssemblyInfoInputs.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.AssemblyInfo.cs
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.csproj.CoreCompileInputs.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\refint\BussinenssObject.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.genruntimeconfig.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\ref\BussinenssObject.dll
