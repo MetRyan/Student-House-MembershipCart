@@ -1,0 +1,15 @@
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\bin\Debug\net6.0\DAOS.deps.json
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\bin\Debug\net6.0\DAOS.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\bin\Debug\net6.0\DAOS.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\bin\Debug\net6.0\BussinenssObject.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\bin\Debug\net6.0\BussinenssObject.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.csproj.AssemblyReference.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.AssemblyInfoInputs.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.AssemblyInfo.cs
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.csproj.CoreCompileInputs.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.csproj.CopyComplete
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\refint\DAOS.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\DAOS.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\DAOS\obj\Debug\net6.0\ref\DAOS.dll

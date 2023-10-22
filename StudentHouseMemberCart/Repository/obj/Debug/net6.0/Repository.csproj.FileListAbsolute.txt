@@ -1,0 +1,17 @@
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\Repository.deps.json
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\Repository.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\Repository.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\BussinenssObject.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\DAOS.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\DAOS.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\bin\Debug\net6.0\BussinenssObject.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\refint\Repository.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\Repository.pdb
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Repository\obj\Debug\net6.0\ref\Repository.dll

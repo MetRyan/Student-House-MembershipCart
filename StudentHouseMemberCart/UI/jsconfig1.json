@@ -1,1 +1,1 @@
-//Scaffold-DbContext “Server=LAPTOP-RFJCRS8T; Database=BIRDSHOPPING;Trusted_Connection=True;” Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+//dotnet ef dbcontext scaffold “Server=LAPTOP-RFJCRS8T;Database=ServicesPackageShopping; Uid=sa; Pwd=sa” Microsoft.EntityFrameworkCore.SqlServer --output-dir ./Models
