@@ -5,6 +5,11 @@ namespace BussinenssObject.Models
 {
     public partial class OrderManagement
     {
+        public OrderManagement()
+        {
+            StaffOrderManagements = new HashSet<StaffOrderManagement>();
+        }
+
         public int OrderId { get; set; }
         public DateTime? DateCreated { get; set; }
         public DateTime? DateCompleted { get; set; }
@@ -19,5 +24,7 @@ namespace BussinenssObject.Models
         public string ServiceName { get; set; } = null!;
         public string? Note { get; set; }
         public string? Status { get; set; }
+
+        public virtual ICollection<StaffOrderManagement> StaffOrderManagements { get; set; }
     }
 }

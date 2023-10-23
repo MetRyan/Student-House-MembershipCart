@@ -27,7 +27,6 @@ namespace BussinenssObject.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Server=LAPTOP-RFJCRS8T;Database=ServicesPackageShopping; Uid=sa; Pwd=sa");
             }
         }
@@ -319,9 +318,21 @@ namespace BussinenssObject.Models
 
                 entity.Property(e => e.StaffId).HasColumnName("StaffID");
 
-                entity.Property(e => e.DateShipping)
+                entity.Property(e => e.Status)
                     .HasColumnType("date")
                     .HasDefaultValueSql("(getdate())");
+
+                entity.HasOne(d => d.Order)
+                    .WithMany(p => p.StaffOrderManagements)
+                    .HasForeignKey(d => d.OrderId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_StaffOrderManagement_OrderManagement");
+
+                entity.HasOne(d => d.Staff)
+                    .WithMany(p => p.StaffOrderManagements)
+                    .HasForeignKey(d => d.StaffId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_StaffOrderManagement_StaffManagement");
             });
 
             OnModelCreatingPartial(modelBuilder);

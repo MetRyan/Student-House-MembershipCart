@@ -5,6 +5,11 @@ namespace BussinenssObject.Models
 {
     public partial class StaffManagement
     {
+        public StaffManagement()
+        {
+            StaffOrderManagements = new HashSet<StaffOrderManagement>();
+        }
+
         public int StaffId { get; set; }
         public DateTime? DateCreated { get; set; }
         public string Email { get; set; } = null!;
@@ -18,5 +23,7 @@ namespace BussinenssObject.Models
         public int? RatingCount { get; set; }
         public double? AverageRating { get; set; }
         public string? Status { get; set; }
+
+        public virtual ICollection<StaffOrderManagement> StaffOrderManagements { get; set; }
     }
 }
