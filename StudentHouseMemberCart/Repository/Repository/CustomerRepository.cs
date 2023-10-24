@@ -4,7 +4,7 @@ using Repository.IRepository;
 
 namespace Repository.Repository
 {
-    public class CustomerRepository :ICustomerRepository
+    public class CustomerRepository : ICustomerRepository
     {
         public void addCustomer(CustomerManagement p) => CustomerDAOs.AddCustomer(p);
 
@@ -19,5 +19,5 @@ namespace Repository.Repository
 
         public bool CheckLogin(String email, String password) => CustomerDAOs.CheckLogin(email, password);
         public CustomerManagement GetCustomerByEmail(String email) => CustomerDAOs.GetCustomerbyEmail(email);
-    CustomerDAOs
+    }
 }

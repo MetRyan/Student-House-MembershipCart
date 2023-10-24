@@ -1,7 +1,7 @@
 //dotnet ef dbcontext scaffold “Server=LAPTOP-RFJCRS8T;Database=ServicesPackageShopping; Uid=sa; Pwd=sa” Microsoft.EntityFrameworkCore.SqlServer --output-dir ./Models
 {
   "AdminAccount": {
-    "Email": "admin@fstore.com",
+    "Email": "Quang@gmail.com",
     "Password": "admin@@",
     "Role": "Admin"
   },

@@ -61,3 +61,10 @@ D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\ob
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.pdb
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\ref\UI.dll
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.CustomerManagement.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.StaffManagement.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.StaffOrderManagement.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.ProductDetail.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.ProfileManagement.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.MainMenu.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Properties.Resources.resources

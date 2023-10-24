@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DAOS
 {
     public class CustomerDAOs
-    {{
+    {
         private static CustomerDAOs instance;
         private static object instanceLock = new object();
         public static CustomerDAOs Instance
@@ -175,5 +175,4 @@ namespace DAOS
 
     }
 
-}
-}
+    }
