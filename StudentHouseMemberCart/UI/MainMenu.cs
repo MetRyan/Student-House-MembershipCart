@@ -48,7 +48,7 @@ namespace UI
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     // currentButton.Font = new System.Drawing.Font("");
-                    currentButton.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
+                    currentButton.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColorcs.ChangeColorBrightness(color, -0.3);
                     ThemeColorcs.PrimaryColor = color;
@@ -64,13 +64,11 @@ namespace UI
                 if (previousBtn.GetType() == typeof(Button))
                 {
 
-                    previousBtn.BackColor = Color.FromArgb(255, 255, 255);
-                    previousBtn.BackColor = Color.FromArgb(255, 255, 255);
+                    previousBtn.BackColor = SystemColors.ActiveCaption;
+                    //   previousBtn.BackColor = Color.FromArgb(255, 255, 255);
 
-                    previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
-
-
+                    previousBtn.ForeColor = Color.Black;
+                    previousBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
                 }
 
 
