@@ -45,11 +45,7 @@ D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\bi
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\bin\Debug\net6.0-windows\BussinenssObject.pdb
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\bin\Debug\net6.0-windows\DAOS.pdb
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
-D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Homepage.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Login.resources
-D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.OrderDetails.resources
-D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Payments.resources
-D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Register.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.csproj.GenerateResource.cache
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.AssemblyInfoInputs.cache
@@ -68,3 +64,7 @@ D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\ob
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.ProfileManagement.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.MainMenu.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Properties.Resources.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.Homepage.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.OrderDetails.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.Payments.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.Register.resources

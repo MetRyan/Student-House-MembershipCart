@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI.Customer;
 
 namespace UI
 {
@@ -32,7 +33,7 @@ namespace UI
             var adminPassword = config["AdminAccount:Password"];
             if (adminUser == txtUsername.Text && adminPassword == txtPassword.Text)
             {
-                Homepage f = new Homepage();// chinh lai qua trang admin
+                Customer.Homepage f = new Customer.Homepage();// chinh lai qua trang admin
                 f.ShowDialog();
             }
             else
@@ -44,7 +45,7 @@ namespace UI
                     string email = txtUsername.Text;
                     this.Hide();
                     CustomerManagement getCustomerbyEmail = repository.GetCustomerByEmail(email);
-                    Homepage f = new Homepage()
+                    Customer.Homepage f = new Customer.Homepage()
 
                     {
                         CustomerManagement = getCustomerbyEmail,

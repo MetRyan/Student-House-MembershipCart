@@ -16,7 +16,7 @@ namespace UI
         private Button currentButton;
         private Random random;
         private int tempIndex;
-
+        private Form activeForm;
 
         public MainMenu()
         {
@@ -29,8 +29,7 @@ namespace UI
             int index = random.Next(ThemeColorcs.ColorList.Count);
             while (tempIndex == index)
             {
-                random.Next(ThemeColorcs.ColorList.Count);
-
+                index = random.Next(ThemeColorcs.ColorList.Count);
             }
             tempIndex = index;
             string color = ThemeColorcs.ColorList[index];
@@ -50,6 +49,10 @@ namespace UI
                     currentButton.ForeColor = Color.White;
                     // currentButton.Font = new System.Drawing.Font("");
                     currentButton.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
+                    panelTitleBar.BackColor = color;
+                    panelLogo.BackColor = ThemeColorcs.ChangeColorBrightness(color, -0.3);
+                    ThemeColorcs.PrimaryColor = color;
+                    ThemeColorcs.SecondaryColor = ThemeColorcs.ChangeColorBrightness(color, -0.3);
                 }
             }
         }
@@ -58,10 +61,12 @@ namespace UI
         {
             foreach (Control previousBtn in panelMenu.Controls)
             {
-                if (previousBtn.GetType() == typeof(Button) )
-                    {
+                if (previousBtn.GetType() == typeof(Button))
+                {
 
                     previousBtn.BackColor = Color.FromArgb(255, 255, 255);
+                    previousBtn.BackColor = Color.FromArgb(255, 255, 255);
+
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
 
@@ -75,23 +80,47 @@ namespace UI
 
 
 
+
+        }
+
+
+        private void OpenChildfrom(Form childform, object btnSender)
+        {
+
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            ActivateButton(btnSender);
+            activeForm = childform;
+            childform.TopLevel = false;
+            childform.FormBorderStyle = FormBorderStyle.None;
+            childform.Dock = DockStyle.Fill;
+            this.panelDesktop.Controls.Add(childform);
+            this.panelDesktop.Tag = childform;
+            childform.BringToFront();
+            childform.Show();
+            lbTitle.Text = childform.Text;
+
         }
 
         private void btnHomepage_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
 
+            OpenChildfrom(new Customer.Homepage(), sender);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildfrom(new Customer.ProfileManagement(), sender);
+
 
         }
 
         private void btnCart_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildfrom(new Customer.ProductDetail(), sender);
+
 
         }
 
@@ -99,11 +128,21 @@ namespace UI
         {
             ActivateButton(sender);
 
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void Login_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            //if(btnLogin.Text == "Login") { }
+            OpenChildfrom(new Login(), sender);
+
+        }
+
+        private void btnResgiter_Click(object sender, EventArgs e)
+        {
+            OpenChildfrom(new Customer.Register(), sender);
 
         }
     }
