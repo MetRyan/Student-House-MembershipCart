@@ -3,8 +3,9 @@
     "",
     "\\StudentHouseMemberCart",
     "\\StudentHouseMemberCart\\UI",
+    "\\StudentHouseMemberCart\\UI\\Admin",
     "\\StudentHouseMemberCart\\UI\\Customer"
   ],
-  "SelectedNode": "\\StudentHouseMemberCart\\UI\\MainMenu.cs",
+  "SelectedNode": "\\StudentHouseMemberCart\\UI\\Admin\\frmCustomerManagement.cs",
   "PreviewInSolutionExplorer": false
 }
