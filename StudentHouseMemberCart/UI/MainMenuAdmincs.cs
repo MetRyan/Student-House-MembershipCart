@@ -117,7 +117,7 @@ namespace UI
         private void btnCart_Click(object sender, EventArgs e)
         {
 
-            OpenChildfrom(new Admin.StaffOrderManagement, sender);
+            OpenChildfrom(new Admin.StaffOrderManagement(), sender);
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

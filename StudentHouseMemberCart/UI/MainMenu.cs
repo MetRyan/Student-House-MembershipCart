@@ -117,7 +117,7 @@ namespace UI
 
         private void btnCart_Click(object sender, EventArgs e)
         {
-            OpenChildfrom(new Customer.ProductDetail(), sender);
+            OpenChildfrom(new Customer.OrderDetail(), sender);
 
 
         }

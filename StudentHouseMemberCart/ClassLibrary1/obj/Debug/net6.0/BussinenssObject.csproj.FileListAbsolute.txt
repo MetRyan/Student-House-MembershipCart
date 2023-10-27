@@ -12,3 +12,17 @@ D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\Class
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.pdb
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.genruntimeconfig.cache
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\ref\BussinenssObject.dll
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.deps.json
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.runtimeconfig.json
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.dll
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\bin\Debug\net6.0\BussinenssObject.pdb
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.dll
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\refint\BussinenssObject.dll
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.pdb
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\BussinenssObject.genruntimeconfig.cache
+C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\ClassLibrary1\obj\Debug\net6.0\ref\BussinenssObject.dll
