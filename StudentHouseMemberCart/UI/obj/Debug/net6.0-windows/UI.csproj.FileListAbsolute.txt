@@ -57,7 +57,6 @@ D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\ob
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.pdb
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\ref\UI.dll
-D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.CustomerManagement.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.StaffManagement.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.StaffOrderManagement.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.ProductDetail.resources
@@ -65,7 +64,6 @@ D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\ob
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.MainMenu.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Properties.Resources.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.Homepage.resources
-D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.OrderDetails.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.Payments.resources
 D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.Register.resources
 C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
@@ -91,3 +89,6 @@ C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\
 C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\refint\UI.dll
 C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.pdb
 C:\Users\Admin\Source\Repos\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.OrderDetail.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Admin.frmCustomerManagement.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.Customer.OrderDetail.resources
+D:\GitHub\StudentHouse\Student-House-MembershipCart\StudentHouseMemberCart\UI\obj\Debug\net6.0-windows\UI.MainMenuAdmincs.resources

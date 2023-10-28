@@ -19,5 +19,7 @@ namespace Repository.Repository
 
         public bool CheckLogin(String email, String password) => CustomerDAOs.CheckLogin(email, password);
         public CustomerManagement GetCustomerByEmail(String email) => CustomerDAOs.GetCustomerbyEmail(email);
+
+        public List<CustomerManagement> SearchByType(string keyword, string type) => CustomerDAOs.SearchByType(keyword, type);
     }
 }

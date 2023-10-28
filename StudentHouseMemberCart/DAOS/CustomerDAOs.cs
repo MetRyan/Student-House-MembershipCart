@@ -171,6 +171,45 @@ namespace DAOS
             }
             return Customer;
         }
+        public static List<CustomerManagement> SearchByType(String keyword, String Type)
+        {
+
+            using (var context = new ServicesPackageShoppingContext())
+
+                if (Type == "Phone")
+            {
+                try
+                {
+                    return  context.CustomerManagements.Where(p=> p.Phone.Contains(keyword)).ToList();
+
+                }
+                catch (FormatException ex)
+                {
+                    // Log error 
+                    throw new Exception($"Invalid keyword for Phone: {keyword}", ex);
+                    // Throw again or return empty result
+                }
+            }
+            else if (Type == "Name")
+            {
+                try
+                {
+
+                    return context.CustomerManagements.Where(p => p.LastName.Contains(keyword)).ToList()
+                            .Where(p=>p.FirstName.Contains(keyword)).ToList();  
+
+
+                }
+                catch (FormatException ex)
+                {
+                    // Log error 
+                    throw new Exception($"Invalid keyword for Name: {keyword}", ex);
+                    // Throw again or return empty result
+                }
+            }
+            return new List<CustomerManagement>();
+
+        }
 
 
     }

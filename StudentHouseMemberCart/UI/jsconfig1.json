@@ -6,6 +6,6 @@
     "Role": "Admin"
   },
   "ConnectionStrings": {
-    "DefaultConnectionString": "Server=LAPTOP-RFJCRS8T;Database=FUCarRentingManagement; Uid=sa; Pwd=sa"
+    "DefaultConnectionString": "Server=LAPTOP-RFJCRS8T;Database=StudentHouseMembership; Uid=sa; Pwd=sa"
   }
 }

@@ -13,7 +13,7 @@ namespace Repository.IRepository
         public void addCustomer(CustomerManagement p);
         public void updateCustomer(CustomerManagement p);
         List<CustomerManagement> GetCustomer();
-
+        List<CustomerManagement> SearchByType(String keyword, string type);
         CustomerManagement GetCustomerbyId(int id);
 
         public Boolean CheckLogin(String email, String password);

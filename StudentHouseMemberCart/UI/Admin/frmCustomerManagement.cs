@@ -33,7 +33,7 @@ namespace UI.Admin
                 BindingSource source = new BindingSource();
                 source.DataSource = CustomerList;
                 txtCustomerID.DataBindings.Clear();
-                txtDateCreated.DataBindings.Clear();
+               /* txtDateCreated.DataBindings.Clear();*/
                 txtDateOfBirth.DataBindings.Clear();
                 txtEmail.DataBindings.Clear();
                 txtFirstName.DataBindings.Clear();
@@ -42,7 +42,7 @@ namespace UI.Admin
                 txtSex.DataBindings.Clear();
 
                 txtCustomerID.DataBindings.Add("Text", source, "CustomerId");
-                txtDateCreated.DataBindings.Add("Text", source, "DateCreated");
+                /*txtDateCreated.DataBindings.Add("Text", source, "DateCreated");*/
                 txtDateOfBirth.DataBindings.Add("Text", source, "Dob");
                 txtEmail.DataBindings.Add("Text", source, "Email");
                 txtFirstName.DataBindings.Add("Text", source, "FirstName");
@@ -198,7 +198,7 @@ namespace UI.Admin
         private void btnSearch_Click(object sender, EventArgs e)
         {
             String keyword = txtSearch.Text;
-            String searchBy = cbSearchType.SelectedItem as string;
+            String searchBy = cbSearch.SelectedItem as string;
             DialogResult d;
             if (keyword == null || searchBy == null)
             {
@@ -209,25 +209,25 @@ namespace UI.Admin
             if (!string.IsNullOrEmpty(keyword) && !string.IsNullOrEmpty(searchBy))
             {
 
-                dgvListviewCar.DataSource = repository.SearchCarbyType(keyword, searchBy);
-                var result = repository.SearchCarbyType(keyword, searchBy);
+                dgvlistview.DataSource = repository.SearchByType(keyword, searchBy);
+                var result = repository.SearchByType(keyword, searchBy);
                 MessageBox.Show("Tìm thấy " + result.Count + " kết quả!");
             }
 
 
         }
 
-        private void btnCarManament_Click(object sender, EventArgs e)
-        {
-            frmCustomerManagment frm = new frmCustomerManagment();
-            this.Hide();
-            frm.ShowDialog();
+        /* private void btnCarManament_Click(object sender, EventArgs e)
+         {
+             frmCustomerManagment frm = new frmCustomerManagment();
+             this.Hide();
+             frm.ShowDialog();
 
-        }
+         }*/
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
-            List<CarInformation> carlist = repository.GetCarList().ToList();
+            List<CustomerManagement> carlist = repository.GetCustomer().ToList();
             DialogResult d;
 
             d = MessageBox.Show("Are you sure delete it", "Delete ", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -236,13 +236,18 @@ namespace UI.Admin
             if (d == DialogResult.OK)
             {
 
-                var customerId = GetSelectedCarID();
-                CarInformation carObject = repository.GetCarListbyId(customerId);
-                repository.DeleteCar(carObject);
-                LoadCarList();
+                var customerId = GetSelectedCUstomerID();
+                CustomerManagement CustomerObject = repository.GetCustomerbyId(customerId);
+                repository.DeleteCustomer(CustomerObject);
+                LoadCustomerList();
             }
 
 
+
+        }
+
+        private void frmCustomerManagement_Load(object sender, EventArgs e)
+        {
 
         }
     }
