@@ -10,13 +10,13 @@
     <Compile Update="Admin\StaffOrderManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Customer\Homepage.cs">
+    <Compile Update="CustomerFolder\Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Customer\ProductDetail.cs">
+    <Compile Update="CustomerFolder\ProductDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Customer\ProfileManagement.cs">
+    <Compile Update="CustomerFolder\ProfileManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainMenu.cs">
@@ -25,13 +25,13 @@
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Customer\OrderDetail.cs">
+    <Compile Update="CustomerFolder\OrderDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Customer\Payments.cs">
+    <Compile Update="CustomerFolder\Payments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Customer\Register.cs">
+    <Compile Update="CustomerFolder\Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainMenuAdmincs.cs">

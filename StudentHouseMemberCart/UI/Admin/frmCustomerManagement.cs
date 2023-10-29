@@ -99,7 +99,7 @@ namespace UI.Admin
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-            List<CustomerManagement> CustomerList = repository.GetCustomer().ToList();
+            List<Customer> CustomerList = repository.GetCustomer().ToList();
             DialogResult d;
 
             if (CustomerList.Count == 0)

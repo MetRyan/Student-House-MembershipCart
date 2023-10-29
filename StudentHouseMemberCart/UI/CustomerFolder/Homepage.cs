@@ -8,7 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace UI.Customer
+
+namespace UI.C
 {
     public partial class Homepage : Form
     {// khai báo ?? truy?n object t? login vào

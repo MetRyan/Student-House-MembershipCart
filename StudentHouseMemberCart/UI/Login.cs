@@ -33,7 +33,7 @@ namespace UI
                 {
                     string email = txtUsername.Text;
                     this.Hide();
-                    CustomerRepository getCustomerbyEmail = repository.GetCustomerByEmail(email);
+                    Customer getCustomerbyEmail = repository.GetCustomerByEmail(email);
                     Customer.Homepage f = new Customer.Homepage()
 
                     {
