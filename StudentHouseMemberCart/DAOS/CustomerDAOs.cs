@@ -23,16 +23,16 @@ namespace DAOS
                 return instance;
             }
         }
-        public static List<CustomerManagement> GetCustomers()
+        public static List<Customer> GetCustomers()
         {
 
-            List<CustomerManagement> listCustomer = new List<CustomerManagement>();
+            List<Customer> listCustomer = new List<Customer>();
             try
             {
 
-                using (var context = new ServicesPackageShoppingContext()) //goi toi database
+                using (var context = new StudentHouseMembershipContext()) //goi toi database
                 {
-                    listCustomer = context.CustomerManagements.ToList();
+                    listCustomer = context.Customers.ToList();
 
 
                 }
@@ -51,14 +51,14 @@ namespace DAOS
 
             return listCustomer;
         }
-        public static CustomerManagement GetCustomerbyId(int id)
+        public static Customer GetCustomerbyId(int id)
         {
-            CustomerManagement product = new CustomerManagement();
+            Customer product = new Customer();
             try
             {
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
-                    product = context.CustomerManagements.SingleOrDefault(m => m.CustomerId == id);
+                    product = context.Customers.SingleOrDefault(m => m.CustomerId == id);
                 }
             }
             catch (Exception ex)
@@ -67,15 +67,15 @@ namespace DAOS
             }
             return product;
         }
-        public static void AddCustomer(CustomerManagement customer)
+        public static void AddCustomer(Customer customer)
         {
             try
             {
 
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
 
-                    context.CustomerManagements.Add(customer);
+                    context.Customers.Add(customer);
                     context.SaveChanges();
 
                 }
@@ -87,14 +87,14 @@ namespace DAOS
                 throw new Exception(ex.Message);
             }
         }
-        public static void DeleteCustomer(CustomerManagement customer)
+        public static void DeleteCustomer(Customer customer)
         {
             try
             {
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
-                    var p1 = context.CustomerManagements.SingleOrDefault(m => m.CustomerId == customer.CustomerId);
-                    context.CustomerManagements.Remove(p1);
+                    var p1 = context.Customers.SingleOrDefault(m => m.CustomerId == customer.CustomerId);
+                    context.Customers.Remove(p1);
                     context.SaveChanges();
                 }
             }
@@ -106,13 +106,13 @@ namespace DAOS
 
 
         }
-        public static void UpdateCustomer(CustomerManagement customer)
+        public static void UpdateCustomer(Customer customer)
         {
             try
             {
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
-                    context.Entry<CustomerManagement>(customer).State = EntityState.Modified; ;
+                    context.Entry<Customer>(customer).State = EntityState.Modified; ;
                     context.SaveChanges();
 
 
@@ -132,9 +132,9 @@ namespace DAOS
         {
             try
             {
-                using (var Context = new ServicesPackageShoppingContext())
+                using (var Context = new StudentHouseMembershipContext())
                 {
-                    var temp = Context.CustomerManagements.SingleOrDefault(p => p.Email == email
+                    var temp = Context.Customers.SingleOrDefault(p => p.Email == email
                     && p.Password == password);
                     if (temp != null)
                     { return true; }
@@ -155,14 +155,14 @@ namespace DAOS
 
 
         }
-        public static CustomerManagement GetCustomerbyEmail(String email)
+        public static Customer GetCustomerbyEmail(String email)
         {
-            CustomerManagement Customer = new CustomerManagement();
+            Customer Customer = new Customer();
             try
             {
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
-                    Customer = context.CustomerManagements.SingleOrDefault(m => m.Email == email);
+                    Customer = context.Customers.SingleOrDefault(m => m.Email == email);
                 }
             }
             catch (Exception ex)
@@ -171,16 +171,16 @@ namespace DAOS
             }
             return Customer;
         }
-        public static List<CustomerManagement> SearchByType(String keyword, String Type)
+        public static List<Customer> SearchByType(String keyword, String Type)
         {
 
-            using (var context = new ServicesPackageShoppingContext())
+            using (var context = new StudentHouseMembershipContext())
 
                 if (Type == "Phone")
             {
                 try
                 {
-                    return  context.CustomerManagements.Where(p=> p.Phone.Contains(keyword)).ToList();
+                    return  context.Customers.Where(p=> p.Phone.Contains(keyword)).ToList();
 
                 }
                 catch (FormatException ex)
@@ -195,7 +195,7 @@ namespace DAOS
                 try
                 {
 
-                    return context.CustomerManagements.Where(p => p.LastName.Contains(keyword)).ToList()
+                    return context.Customers.Where(p => p.LastName.Contains(keyword)).ToList()
                             .Where(p=>p.FirstName.Contains(keyword)).ToList();  
 
 
@@ -207,7 +207,7 @@ namespace DAOS
                     // Throw again or return empty result
                 }
             }
-            return new List<CustomerManagement>();
+            return new List<Customer>();
 
         }
 

@@ -9,15 +9,15 @@ namespace Repository.IRepository
 {
     public interface ICustomerRepository
     {
-        public void DeleteCustomer(CustomerManagement p);
-        public void addCustomer(CustomerManagement p);
-        public void updateCustomer(CustomerManagement p);
-        List<CustomerManagement> GetCustomer();
-        List<CustomerManagement> SearchByType(String keyword, string type);
-        CustomerManagement GetCustomerbyId(int id);
+        public void DeleteCustomer(Customer p);
+        public void addCustomer(Customer p);
+        public void updateCustomer(Customer p);
+        List<Customer > GetCustomer();
+        List<Customer> SearchByType(String keyword, string type);
+        Customer GetCustomerbyId(int id);
 
         public Boolean CheckLogin(String email, String password);
-        CustomerManagement GetCustomerByEmail(String email);
+        Customer GetCustomerByEmail(String email);
 
     }
 }
