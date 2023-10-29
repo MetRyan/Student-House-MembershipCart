@@ -16,9 +16,9 @@ namespace BussinenssObject.Models
         {
         }
 
-        public virtual DbSet<Admin> Admins { get; set; } = null!;
         public virtual DbSet<AdminService> AdminServices { get; set; } = null!;
-        public virtual DbSet<Customer> Customers { get; set; } = null!;
+        public virtual DbSet<AdminT> AdminTs { get; set; } = null!;
+        public virtual DbSet<CustomerT> CustomerTs { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<OrderDetail> OrderDetails { get; set; } = null!;
         public virtual DbSet<Payment> Payments { get; set; } = null!;
@@ -37,9 +37,33 @@ namespace BussinenssObject.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Admin>(entity =>
+            modelBuilder.Entity<AdminService>(entity =>
             {
-                entity.ToTable("Admin");
+                entity.HasNoKey();
+
+                entity.Property(e => e.AdminId).HasColumnName("AdminID");
+
+                entity.Property(e => e.LatestUpdate).HasColumnType("date");
+
+                entity.Property(e => e.ServiceId).HasColumnName("ServiceID");
+
+                entity.HasOne(d => d.Admin)
+                    .WithMany()
+                    .HasForeignKey(d => d.AdminId)
+                    .HasConstraintName("FK__AdminServ__Admin__32E0915F");
+
+                entity.HasOne(d => d.Service)
+                    .WithMany()
+                    .HasForeignKey(d => d.ServiceId)
+                    .HasConstraintName("FK__AdminServ__Servi__33D4B598");
+            });
+
+            modelBuilder.Entity<AdminT>(entity =>
+            {
+                entity.HasKey(e => e.AdminId)
+                    .HasName("PK__Admin__719FE4E8EBE4F4B7");
+
+                entity.ToTable("AdminT");
 
                 entity.Property(e => e.AdminId)
                     .ValueGeneratedNever()
@@ -68,30 +92,12 @@ namespace BussinenssObject.Models
                     .HasColumnName("status");
             });
 
-            modelBuilder.Entity<AdminService>(entity =>
+            modelBuilder.Entity<CustomerT>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.CustomerId)
+                    .HasName("PK__Customer__A4AE64B8A12F5394");
 
-                entity.Property(e => e.AdminId).HasColumnName("AdminID");
-
-                entity.Property(e => e.LatestUpdate).HasColumnType("date");
-
-                entity.Property(e => e.ServiceId).HasColumnName("ServiceID");
-
-                entity.HasOne(d => d.Admin)
-                    .WithMany()
-                    .HasForeignKey(d => d.AdminId)
-                    .HasConstraintName("FK__AdminServ__Admin__32E0915F");
-
-                entity.HasOne(d => d.Service)
-                    .WithMany()
-                    .HasForeignKey(d => d.ServiceId)
-                    .HasConstraintName("FK__AdminServ__Servi__33D4B598");
-            });
-
-            modelBuilder.Entity<Customer>(entity =>
-            {
-                entity.ToTable("Customer");
+                entity.ToTable("CustomerT");
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 

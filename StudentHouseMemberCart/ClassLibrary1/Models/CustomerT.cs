@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace BussinenssObject.Models
 {
-    public partial class Customer
+    public partial class CustomerT
     {
-        public Customer()
+        public CustomerT()
         {
             Orders = new HashSet<Order>();
         }

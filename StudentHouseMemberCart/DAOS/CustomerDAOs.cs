@@ -25,16 +25,16 @@ namespace DAOS
                 }
             }
         }
-        public static List<Customer> GetCustomers()
+        public static List<CustomerT> GetCustomers()
         {
 
-            List<Customer> listCustomer = new List<Customer>();
+            List<CustomerT> listCustomer = new List<CustomerT>();
             try
             {
 
                 using (var context = new StudentHouseMembershipContext()) //goi toi database
                 {
-                    listCustomer = context.Customers.ToList();
+                    listCustomer = context.CustomerTs.ToList();  
 
 
                 }
@@ -53,14 +53,14 @@ namespace DAOS
 
             return listCustomer;
         }
-        public static Customer GetCustomerbyId(int id)
+        public static CustomerT GetCustomerbyId(int id)
         {
-            Customer product = new Customer();
+            CustomerT product = new CustomerT();
             try
             {
                 using (var context = new StudentHouseMembershipContext())
                 {
-                    product = context.Customers.SingleOrDefault(m => m.CustomerId == id);
+                    product = context.CustomerTs.SingleOrDefault(m => m.CustomerId == id);
                 }
             }
             catch (Exception ex)
@@ -69,7 +69,7 @@ namespace DAOS
             }
             return product;
         }
-        public static void AddCustomer(Customer customer)
+        public static void AddCustomer(CustomerT customer)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace DAOS
                 using (var context = new StudentHouseMembershipContext())
                 {
 
-                    context.Customers.Add(customer);
+                    context.CustomerTs.Add(customer);
                     context.SaveChanges();
 
                 }
@@ -89,14 +89,14 @@ namespace DAOS
                 throw new Exception(ex.Message);
             }
         }
-        public static void DeleteCustomer(Customer customer)
+        public static void DeleteCustomer(CustomerT customer)
         {
             try
             {
                 using (var context = new StudentHouseMembershipContext())
                 {
-                    var p1 = context.Customers.SingleOrDefault(m => m.CustomerId == customer.CustomerId);
-                    context.Customers.Remove(p1);
+                    var p1 = context.CustomerTs.SingleOrDefault(m => m.CustomerId == customer.CustomerId);
+                    context.CustomerTs.Remove(p1);
                     context.SaveChanges();
                 }
             }
@@ -108,13 +108,13 @@ namespace DAOS
 
 
         }
-        public static void UpdateCustomer(Customer customer)
+        public static void UpdateCustomer(CustomerT customer)
         {
             try
             {
                 using (var context = new StudentHouseMembershipContext())
                 {
-                    context.Entry<Customer>(customer).State = EntityState.Modified; ;
+                    context.Entry<CustomerT>(customer).State = EntityState.Modified; ;
                     context.SaveChanges();
 
 
@@ -136,7 +136,7 @@ namespace DAOS
             {
                 using (var Context = new StudentHouseMembershipContext())
                 {
-                    var temp = Context.Customers.SingleOrDefault(p => p.Email == email
+                    var temp = Context.CustomerTs.SingleOrDefault(p => p.Email == email
                     && p.Password == password);
                     if (temp != null)
                     { return true; }
@@ -157,14 +157,14 @@ namespace DAOS
 
 
         }
-        public static Customer GetCustomerbyEmail(String email)
+        public static CustomerT GetCustomerbyEmail(String email)
         {
-            Customer Customer = new Customer();
+            CustomerT Customer = new CustomerT();
             try
             {
                 using (var context = new StudentHouseMembershipContext())
                 {
-                    Customer = context.Customers.SingleOrDefault(m => m.Email == email);
+                    Customer = context.CustomerTs.SingleOrDefault(m => m.Email == email);
                 }
             }
             catch (Exception ex)
@@ -173,17 +173,17 @@ namespace DAOS
             }
             return Customer;
         }
-        public static List<Customer> SearchByType(String keyword, String Type)
+        public static List<CustomerT> SearchByType(String keyword, String Type)
         {
 
             using (var context = new StudentHouseMembershipContext())
 
                 if (Type == "Phone")
                 {
-                    return  context.Customers.Where(p=> p.Phone.Contains(keyword)).ToList();
+                    return  context.CustomerTs.Where(p=> p.Phone.Contains(keyword)).ToList();
                     try
                     {
-                        return context.Customers.Where(p => p.Phone.Contains(keyword)).ToList();
+                        return context.CustomerTs.Where(p => p.Phone.Contains(keyword)).ToList();
                     }
                     catch (FormatException ex)
                     {
@@ -197,9 +197,9 @@ namespace DAOS
                     try
                     {
 
-                    return context.Customers.Where(p => p.LastName.Contains(keyword)).ToList()
+                    return context.CustomerTs.Where(p => p.LastName.Contains(keyword)).ToList()
                             .Where(p=>p.FirstName.Contains(keyword)).ToList();  
-                        return context.Customers.Where(p => p.LastName.Contains(keyword)).ToList()
+                        return context.CustomerTs.Where(p => p.LastName.Contains(keyword)).ToList()
                                 .Where(p => p.FirstName.Contains(keyword)).ToList();
 
 
@@ -212,7 +212,7 @@ namespace DAOS
                     }
              
             }
-            return new List<Customer>();
+            return new List<CustomerT>();
 
         }
 

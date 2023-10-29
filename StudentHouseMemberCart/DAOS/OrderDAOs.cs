@@ -51,23 +51,23 @@ namespace DAOS
                 throw new Exception(ex.Message);
             }
         }
-        public IEnumerable<Order> FilterOrderByServiceName(string serviceName, IEnumerable<Order> searchList)
-        {
-            using (var context = new StudentHouseMembershipContext())
-            {
-                IQueryable<Order> query = context.Orders; // OrderManagement(s) ?
+        /*  public IEnumerable<Order> FilterOrderByServiceName(string serviceName, IEnumerable<Order> searchList)
+          {
+              using (var context = new StudentHouseMembershipContext())
+              {
+                  IQueryable<Order> query = context.Orders; // OrderManagement(s) ?
 
-                if (!serviceName.Equals("Ordered Services"))
-                {
-                    query = query.Where(order => order.ServiceName == serviceName);
-                }
+                  if (!serviceName.Equals("Ordered Services"))
+                  {
+                      query = query.Where(order => order.ServiceName == serviceName);
+                  }
 
-                return query.ToList();
-            }
-        }
+                  return query.ToList();
+              }
+          }*/
 
 
- /*       public static void AddOrder(OrderDetail order)
+        public static void AddOrder(OrderDetail order)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace DAOS
             {
                 throw new Exception(ex.Message);
             }
-        }*/
+        }
 
     }
 }

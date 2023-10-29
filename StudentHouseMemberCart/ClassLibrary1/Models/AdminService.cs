@@ -9,7 +9,7 @@ namespace BussinenssObject.Models
         public int? ServiceId { get; set; }
         public DateTime? LatestUpdate { get; set; }
 
-        public virtual Admin? Admin { get; set; }
+        public virtual AdminT? Admin { get; set; }
         public virtual Service? Service { get; set; }
     }
 }

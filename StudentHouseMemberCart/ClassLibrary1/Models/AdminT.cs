@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BussinenssObject.Models
 {
-    public partial class Admin
+    public partial class AdminT
     {
         public int AdminId { get; set; }
         public string AdminName { get; set; } = null!;

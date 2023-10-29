@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Repository.IRepository;
 using Repository.Repository;
+using BussinenssObject.Models;
 
 namespace UI
 {
@@ -33,7 +34,7 @@ namespace UI
                 {
                     string email = txtUsername.Text;
                     this.Hide();
-                    Customer getCustomerbyEmail = repository.GetCustomerByEmail(email);
+                    CustomerT getCustomerbyEmail = repository.GetCustomerByEmail(email);
                     Customer.Homepage f = new Customer.Homepage()
 
                     {

@@ -4,16 +4,16 @@ namespace Repository.IRepository
 {
     public interface ICustomerRepository
     {
-        public void DeleteCustomer(Customer p);
-        public void addCustomer(Customer p);
-        public void updateCustomer(Customer p);
-        List<Customer > GetCustomer();
-        List<Customer> GetCustomers();
-        List<Customer> SearchByType(String keyword, string type);
-        Customer GetCustomerbyId(int id);
+        public void DeleteCustomer(CustomerT p);
+        public void addCustomer(CustomerT p);
+        public void updateCustomer(CustomerT p);
+        List<CustomerT> GetCustomer();
+        List<CustomerT> GetCustomers();
+        List<CustomerT> SearchByType(String keyword, string type);
+        CustomerT GetCustomerbyId(int id);
 
         public Boolean CheckLogin(String email, String password);
-        Customer GetCustomerByEmail(String email);
+        CustomerT GetCustomerByEmail(String email);
 
     }
 }

@@ -17,7 +17,7 @@ namespace BussinenssObject.Models
         public string? Description { get; set; }
         public string? Status { get; set; }
 
-        public virtual Customer Customer { get; set; } = null!;
+        public virtual CustomerT Customer { get; set; } = null!;
         public virtual ICollection<Payment> Payments { get; set; }
     }
 }
