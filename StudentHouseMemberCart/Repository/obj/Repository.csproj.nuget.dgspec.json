@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\Repository\\Repository.csproj": {}
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
         "projectName": "BussinenssObject",
-        "projectPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\ClassLibrary1\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,32 +76,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
         "projectName": "DAOS",
-        "projectPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\DAOS\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
-                "projectPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj"
+              "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
+                "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj"
               }
             }
           }
@@ -137,32 +139,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\Repository\\Repository.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\Repository\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,8 +176,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
-                "projectPath": "D:\\Study\\FA23\\PRN211\\StudentHouse\\StudentHouseMemberCart\\DAOS\\DAOS.csproj"
+              "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
+                "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj"
               }
             }
           }
@@ -202,18 +202,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.24, 6.0.24]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

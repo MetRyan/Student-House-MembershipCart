@@ -210,13 +210,7 @@ namespace DAOS
                         throw new Exception($"Invalid keyword for Name: {keyword}", ex);
                         // Throw again or return empty result
                     }
-                }
-                catch (FormatException ex)
-                {
-                    // Log error 
-                    throw new Exception($"Invalid keyword for Name: {keyword}", ex);
-                    // Throw again or return empty result
-                }
+             
             }
             return new List<Customer>();
 

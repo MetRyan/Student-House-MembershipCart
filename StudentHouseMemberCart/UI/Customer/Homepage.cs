@@ -12,7 +12,7 @@ namespace UI.Customer
 {
     public partial class Homepage : Form
     {// khai báo ?? truy?n object t? login vào
-        public CustomerManagement CustomerManagement { get; set; }
+        public Customer CustomerManagement { get; set; }
         public Homepage()
         {
             InitializeComponent();

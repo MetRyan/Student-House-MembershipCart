@@ -12,13 +12,12 @@ namespace BussinenssObject.Models
 
         public int OrderId { get; set; }
         public int CustomerId { get; set; }
-        public int ServiceId { get; set; }
-        public double? Price { get; set; }
+        public int TotalServices { get; set; }
+        public double? Total { get; set; }
         public string? Description { get; set; }
         public string? Status { get; set; }
 
         public virtual Customer Customer { get; set; } = null!;
-        public virtual Service Service { get; set; } = null!;
         public virtual ICollection<Payment> Payments { get; set; }
     }
 }

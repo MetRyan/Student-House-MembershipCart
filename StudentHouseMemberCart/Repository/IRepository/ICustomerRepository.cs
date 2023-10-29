@@ -8,7 +8,7 @@ namespace Repository.IRepository
         public void addCustomer(Customer p);
         public void updateCustomer(Customer p);
         List<Customer > GetCustomer();
-        List<Customer> GetCustomer();
+        List<Customer> GetCustomers();
         List<Customer> SearchByType(String keyword, string type);
         Customer GetCustomerbyId(int id);
 

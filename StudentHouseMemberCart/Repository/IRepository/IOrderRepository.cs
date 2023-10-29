@@ -4,8 +4,8 @@ namespace Repository.IRepository
 {
     public interface IOrderRepository
     {
-        public void deleteOrder(CustomerManagement p);
-        public void addOrder(CustomerManagement p);
-        public IEnumerable<OrderManagement> FilterOrderByServiceName(string serviceName, IEnumerable<OrderManagement> searchList);
+        public void deleteOrder(Customer p);
+        public void addOrder(Customer p);
+        public IEnumerable<Order> FilterOrderByServiceName(string serviceName, IEnumerable<Order> searchList);
     }
 }

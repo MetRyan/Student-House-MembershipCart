@@ -16,9 +16,9 @@ namespace UI.Customer
         IEnumerable<string> customerList = null;
         //
 
-        IEnumerable<OrderManagement> dataSource;
-        IEnumerable<OrderManagement> searchResult;
-        IEnumerable<OrderManagement> filterResult;
+        IEnumerable<Order> dataSource;
+        IEnumerable<Order> searchResult;
+        IEnumerable<Order> filterResult;
         public OrderDetail()
         {
             InitializeComponent();

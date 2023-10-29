@@ -7,7 +7,6 @@ namespace BussinenssObject.Models
     {
         public Service()
         {
-            Orders = new HashSet<Order>();
             staff = new HashSet<staff>();
         }
 
@@ -18,7 +17,6 @@ namespace BussinenssObject.Models
         public double? Price { get; set; }
         public string? Status { get; set; }
 
-        public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<staff> staff { get; set; }
     }
 }

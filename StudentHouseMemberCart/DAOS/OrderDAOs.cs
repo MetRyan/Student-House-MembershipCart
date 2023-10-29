@@ -34,22 +34,7 @@ namespace DAOS
             }
             return listOrder;
         }
-        public static void AddOrder(Order order)
-        {
-            try
-            {
-                using (var context = new StudentHouseMembershipContext())
-                {
-
-                    context.Orders.Add(order);
-                    context.SaveChanges();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+    
         public static void DeleteOrder(Order order)
         {
             try
@@ -80,6 +65,24 @@ namespace DAOS
                 return query.ToList();
             }
         }
+
+
+ /*       public static void AddOrder(OrderDetail order)
+        {
+            try
+            {
+                using (var context = new StudentHouseMembershipContext())
+                {
+
+                    context.OrderDetails.Add(order);
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }*/
 
     }
 }
