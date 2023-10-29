@@ -1,9 +1,4 @@
 ﻿using BussinenssObject.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAOS
 {
@@ -22,15 +17,15 @@ namespace DAOS
                 return instance;
             }
         }
-        public static List<OrderManagement> GetOrders()
+        public static List<Order> GetOrders()
         {
 
-            List<OrderManagement> listOrder = new List<OrderManagement>();
+            List<Order> listOrder = new List<Order>();
             try
             {
-                using (var context = new ServicesPackageShoppingContext()) //goi toi database
+                using (var context = new StudentHouseMembershipContext()) //goi toi database
                 {
-                    listOrder = context.OrderManagements.ToList();
+                    listOrder = context.Orders.ToList();
                 }
             }
             catch (Exception e)
@@ -39,14 +34,14 @@ namespace DAOS
             }
             return listOrder;
         }
-        public static void AddOrder(OrderManagement order)
+        public static void AddOrder(Order order)
         {
             try
             {
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
 
-                    context.OrderManagements.Add(order);
+                    context.Orders.Add(order);
                     context.SaveChanges();
                 }
             }
@@ -55,14 +50,14 @@ namespace DAOS
                 throw new Exception(ex.Message);
             }
         }
-        public static void DeleteOrder(OrderManagement order)
+        public static void DeleteOrder(Order order)
         {
             try
             {
-                using (var context = new ServicesPackageShoppingContext())
+                using (var context = new StudentHouseMembershipContext())
                 {
-                    var p1 = context.OrderManagements.SingleOrDefault(m => m.OrderId == order.OrderId);
-                    context.OrderManagements.Remove(p1);
+                    var p1 = context.Orders.SingleOrDefault(m => m.OrderId == order.OrderId);
+                    context.Orders.Remove(p1);
                     context.SaveChanges();
                 }
             }
@@ -71,11 +66,11 @@ namespace DAOS
                 throw new Exception(ex.Message);
             }
         }
-        public IEnumerable<OrderManagement> FilterOrderByServiceName(string serviceName, IEnumerable<OrderManagement> searchList)
+        public IEnumerable<Order> FilterOrderByServiceName(string serviceName, IEnumerable<Order> searchList)
         {
-            using (var context = new ServicesPackageShoppingContext())
+            using (var context = new StudentHouseMembershipContext())
             {
-                IQueryable<OrderManagement> query = context.OrderManagements; // OrderManagement(s) ?
+                IQueryable<Order> query = context.Orders; // OrderManagement(s) ?
 
                 if (!serviceName.Equals("Ordered Services"))
                 {

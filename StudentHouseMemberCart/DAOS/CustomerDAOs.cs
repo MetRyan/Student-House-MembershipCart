@@ -1,10 +1,5 @@
 ﻿using BussinenssObject.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAOS
 {
@@ -12,15 +7,22 @@ namespace DAOS
     {
         private static CustomerDAOs instance;
         private static object instanceLock = new object();
+        private CustomerDAOs()
+        {
+
+        }
         public static CustomerDAOs Instance
         {
             get
             {
-                if (instance == null)
+                lock (instanceLock)
                 {
-                    instance = new CustomerDAOs();
+                    if (instance == null)
+                    {
+                        instance = new CustomerDAOs();
+                    }
+                    return instance;
                 }
-                return instance;
             }
         }
         public static List<Customer> GetCustomers()
@@ -121,7 +123,7 @@ namespace DAOS
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message + "sdsdsds");
+                throw new Exception(ex.Message + "Error");
 
             }
 
@@ -177,28 +179,37 @@ namespace DAOS
             using (var context = new StudentHouseMembershipContext())
 
                 if (Type == "Phone")
-            {
-                try
                 {
                     return  context.Customers.Where(p=> p.Phone.Contains(keyword)).ToList();
-
+                    try
+                    {
+                        return context.Customers.Where(p => p.Phone.Contains(keyword)).ToList();
+                    }
+                    catch (FormatException ex)
+                    {
+                        // Log error 
+                        throw new Exception($"Invalid keyword for Phone: {keyword}", ex);
+                        // Throw again or return empty result
+                    }
                 }
-                catch (FormatException ex)
+                else if (Type == "Name")
                 {
-                    // Log error 
-                    throw new Exception($"Invalid keyword for Phone: {keyword}", ex);
-                    // Throw again or return empty result
-                }
-            }
-            else if (Type == "Name")
-            {
-                try
-                {
+                    try
+                    {
 
                     return context.Customers.Where(p => p.LastName.Contains(keyword)).ToList()
                             .Where(p=>p.FirstName.Contains(keyword)).ToList();  
+                        return context.Customers.Where(p => p.LastName.Contains(keyword)).ToList()
+                                .Where(p => p.FirstName.Contains(keyword)).ToList();
 
 
+                    }
+                    catch (FormatException ex)
+                    {
+                        // Log error 
+                        throw new Exception($"Invalid keyword for Name: {keyword}", ex);
+                        // Throw again or return empty result
+                    }
                 }
                 catch (FormatException ex)
                 {
@@ -214,4 +225,4 @@ namespace DAOS
 
     }
 
-    }
+}

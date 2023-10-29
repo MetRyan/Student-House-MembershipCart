@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace BussinenssObject.Models
 {
@@ -30,7 +27,7 @@ namespace BussinenssObject.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=LAPTOP-RFJCRS8T;Database=StudentHouseMembership; Uid=sa; Pwd=sa");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-IDK73G0\\SQLEXPRESS;Database=StudentHouseMembership; Uid=sa; Pwd=1234567890");
             }
         }
 
