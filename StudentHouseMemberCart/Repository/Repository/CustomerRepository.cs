@@ -6,20 +6,20 @@ namespace Repository.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
-        public void addCustomer(CustomerManagement p) => CustomerDAOs.AddCustomer(p);
+        public void addCustomer(Customer p) => CustomerDAOs.AddCustomer(p);
 
-        public void DeleteCustomer(CustomerManagement p) => CustomerDAOs.DeleteCustomer(p);
+        public void DeleteCustomer(Customer p) => CustomerDAOs.DeleteCustomer(p);
 
 
-        public CustomerManagement GetCustomerbyId(int id) => CustomerDAOs.GetCustomerbyId(id);
+        public Customer GetCustomerbyId(int id) => CustomerDAOs.GetCustomerbyId(id);
 
-        public List<CustomerManagement> GetCustomer() => CustomerDAOs.GetCustomers();
+        public List<Customer> GetCustomer() => CustomerDAOs.GetCustomers();
 
-        public void updateCustomer(CustomerManagement p) => CustomerDAOs.UpdateCustomer(p);
+        public void updateCustomer(Customer p) => CustomerDAOs.UpdateCustomer(p);
 
         public bool CheckLogin(String email, String password) => CustomerDAOs.CheckLogin(email, password);
-        public CustomerManagement GetCustomerByEmail(String email) => CustomerDAOs.GetCustomerbyEmail(email);
+        public Customer GetCustomerByEmail(String email) => CustomerDAOs.GetCustomerbyEmail(email);
 
-        public List<CustomerManagement> SearchByType(string keyword, string type) => CustomerDAOs.SearchByType(keyword, type);
+        public List<Customer> SearchByType(string keyword, string type) => CustomerDAOs.SearchByType(keyword, type);
     }
 }

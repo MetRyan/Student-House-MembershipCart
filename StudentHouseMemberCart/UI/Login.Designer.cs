@@ -37,59 +37,64 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(245, 144);
+            txtUsername.Location = new Point(214, 108);
+            txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(343, 27);
+            txtUsername.Size = new Size(301, 23);
             txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(254, 221);
+            txtPassword.Location = new Point(222, 166);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(334, 27);
+            txtPassword.Size = new Size(293, 23);
             txtPassword.TabIndex = 1;
             txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // lbusername
             // 
             lbusername.AutoSize = true;
-            lbusername.Location = new Point(117, 143);
+            lbusername.Location = new Point(102, 107);
             lbusername.Name = "lbusername";
-            lbusername.Size = new Size(75, 20);
+            lbusername.Size = new Size(60, 15);
             lbusername.TabIndex = 2;
             lbusername.Text = "Username";
             // 
             // lbPassword
             // 
             lbPassword.AutoSize = true;
-            lbPassword.Location = new Point(122, 228);
+            lbPassword.Location = new Point(107, 171);
             lbPassword.Name = "lbPassword";
-            lbPassword.Size = new Size(70, 20);
+            lbPassword.Size = new Size(57, 15);
             lbPassword.TabIndex = 3;
             lbPassword.Text = "Password";
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(325, 311);
+            btnSubmit.Location = new Point(284, 233);
+            btnSubmit.Margin = new Padding(3, 2, 3, 2);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(94, 29);
+            btnSubmit.Size = new Size(82, 22);
             btnSubmit.TabIndex = 4;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(btnSubmit);
             Controls.Add(lbPassword);
             Controls.Add(lbusername);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

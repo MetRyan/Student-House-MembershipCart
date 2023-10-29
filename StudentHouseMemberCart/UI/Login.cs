@@ -1,17 +1,6 @@
-﻿using BussinenssObject.Models;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Repository.IRepository;
 using Repository.Repository;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using UI.Customer;
 
 namespace UI
 {
@@ -44,7 +33,7 @@ namespace UI
                 {
                     string email = txtUsername.Text;
                     this.Hide();
-                    CustomerManagement getCustomerbyEmail = repository.GetCustomerByEmail(email);
+                    CustomerRepository getCustomerbyEmail = repository.GetCustomerByEmail(email);
                     Customer.Homepage f = new Customer.Homepage()
 
                     {
@@ -64,6 +53,11 @@ namespace UI
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\StudentHouseMemberCart",
-    "\\StudentHouseMemberCart\\UI",
-    "\\StudentHouseMemberCart\\UI\\Admin",
-    "\\StudentHouseMemberCart\\UI\\Customer"
+    ""
   ],
-  "SelectedNode": "\\StudentHouseMemberCart\\UI\\Admin\\frmCustomerManagement.cs",
+  "SelectedNode": "\\StudentHouseMemberCart.sln",
   "PreviewInSolutionExplorer": false
 }
