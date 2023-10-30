@@ -1,4 +1,4 @@
-﻿using BussinenssObject.Models;
+﻿using BussinenssObject;
 using Repository.IRepository;
 using Repository.Repository;
 
@@ -99,7 +99,7 @@ namespace UI.Admin
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-            List<Customer> CustomerList = repository.GetCustomer().ToList();
+            List<CustomerT> CustomerList = repository.GetCustomer().ToList();
             DialogResult d;
 
             if (CustomerList.Count == 0)
@@ -114,7 +114,7 @@ namespace UI.Admin
             {
 
                 var CustomerId = GetSelectedCUstomerID();
-                CustomerManagement CustomerObject = repository.GetCustomerbyId(CustomerId);
+                CustomerT CustomerObject = repository.GetCustomerbyId(CustomerId);
                 repository.DeleteCustomer(CustomerObject);
                 LoadCustomerList();
             }
@@ -227,7 +227,7 @@ namespace UI.Admin
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
-            List<CustomerManagement> carlist = repository.GetCustomer().ToList();
+            List<CustomerT> carlist = repository.GetCustomer().ToList();
             DialogResult d;
 
             d = MessageBox.Show("Are you sure delete it", "Delete ", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -237,7 +237,7 @@ namespace UI.Admin
             {
 
                 var customerId = GetSelectedCUstomerID();
-                CustomerManagement CustomerObject = repository.GetCustomerbyId(customerId);
+                CustomerT CustomerObject = repository.GetCustomerbyId(customerId);
                 repository.DeleteCustomer(CustomerObject);
                 LoadCustomerList();
             }

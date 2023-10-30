@@ -1,4 +1,4 @@
-﻿using BussinenssObject.Models;
+﻿using BussinenssObject;
 using DAOS;
 using Repository.IRepository;
 
@@ -21,5 +21,10 @@ namespace Repository.Repository
         public CustomerT GetCustomerByEmail(String email) => CustomerDAOs.GetCustomerbyEmail(email);
 
         public List<CustomerT> SearchByType(string keyword, string type) => CustomerDAOs.SearchByType(keyword, type);
+
+        public List<CustomerT> GetCustomers()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

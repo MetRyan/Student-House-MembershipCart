@@ -34,7 +34,7 @@ namespace DAOS
             }
             return listOrder;
         }
-    
+
         public static void DeleteOrder(Order order)
         {
             try
@@ -65,23 +65,166 @@ namespace DAOS
                   return query.ToList();
               }
           }*/
+        public int CheckOrderId(Order order)
+        {
+
+            if (order != null && order.Status == "paid")
+            {
+                // Đánh dấu đơn đặt hàng là đã thanh toán
+                // order.status = true;
+
+                // Tạo một orderId mới cho khách hàng
+                order.OrderId = GenerateNewOrderId(); // Hãy thay thế GenerateNewOrderId() bằng cách tạo mã orderId theo quy tắc của bạn.
+
+                // Lưu thay đổi vào cơ sở dữ liệu hoặc hệ thống lưu trữ nếu cần
 
 
-        public static void AddOrder(OrderDetail order)
+                return order.OrderId; // Trả về true để chỉ ra rằng trạng thái đã được kiểm tra và orderId đã được cập nhật.
+            }
+            else
+            {
+
+                int existingOrderId = GetExistingOrderIdForCustomer(order.CustomerId);
+                return existingOrderId;
+
+            }
+
+
+        }
+
+        private int GetExistingOrderIdForCustomer(int customerId)
         {
             try
             {
                 using (var context = new StudentHouseMembershipContext())
                 {
-
-                    context.OrderDetails.Add(order);
-                    context.SaveChanges();
+                    var p1 = context.Orders.SingleOrDefault(p => p.CustomerId == customerId);
+                    if (p1 != null)
+                    {
+                        return p1.OrderId;
+                    }
+                    else
+                    {
+                        throw new Exception("can not find ");
+                    }
                 }
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
+
+        }
+
+        //
+        private int LastOrderId = GetOrders().Count();
+
+
+        private int GenerateNewOrderId()
+        {
+            int newOrderId = LastOrderId + 1;
+            return newOrderId;
+        }
+        //
+
+       /* public Boolean CheckExistServicesID(OrderDetail order, int OrderId)
+        {
+            try
+            {
+                List<OrderDetail> getOrder = GetOrderDetails(OrderId);
+
+
+
+                using (var context = new StudentHouseMembershipContext())
+                {
+
+                }
+
+
+            }
+            catch
+            {
+
+
+            }
+
+        }*/
+
+        public static void AddOrder(OrderDetail order, int productId)
+        {
+
+            try
+            {
+                using (var context = new StudentHouseMembershipContext())
+                {
+                    Boolean Checkexist;
+
+                    Checkexist = context.OrderDetails.Any(o => o.OrderId == order.OrderId && o.ServiceId == productId);
+
+                    if (Checkexist)
+                    {
+                        context.OrderDetails.Add(order);
+                        context.SaveChanges();
+                    }
+                    else
+                    { 
+                        throw new Exception("services have been exist at your cart");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<OrderDetail> GetOrderDetails(int OrderId)
+        {
+            try
+            {
+                using (var context = new StudentHouseMembershipContext())
+                {
+                    return context.OrderDetails.Where(p => p.OrderId == OrderId).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("can not find ");
+            }
+
+
+        }
+
+
+        public Boolean removeServicesFromCartById(int ProductId, int OrderId)
+        {
+
+            try
+            {
+                using (var context = new StudentHouseMembershipContext())
+                {
+                    OrderDetail p1 = context.OrderDetails.Where(p => p.OrderId == OrderId).ToList()
+                    .SingleOrDefault(p => p.ServiceId == ProductId);
+                    if (p1 != null)
+                    {
+                        context.OrderDetails.Remove(p1);
+                        context.SaveChanges();
+                        return true;
+
+                    }
+                    else
+                    {
+                        return false;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+
         }
 
     }

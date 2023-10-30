@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Repository.IRepository;
 using Repository.Repository;
-using BussinenssObject.Models;
+using BussinenssObject;
 
 namespace UI
 {

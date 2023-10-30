@@ -275,6 +275,8 @@ namespace BussinenssObject.Models
 
                 entity.Property(e => e.Email).HasMaxLength(50);
 
+                entity.Property(e => e.Password).HasMaxLength(10);
+
                 entity.Property(e => e.Phone)
                     .HasMaxLength(13)
                     .IsUnicode(false);
@@ -282,7 +284,7 @@ namespace BussinenssObject.Models
                 entity.Property(e => e.ServiceId).HasColumnName("ServiceID");
 
                 entity.Property(e => e.Sex)
-                    .HasMaxLength(5)
+                    .HasMaxLength(10)
                     .IsUnicode(false)
                     .HasColumnName("sex");
 
