@@ -24,7 +24,7 @@ namespace Repository.Repository
         public bool CheckLoginforStaff(String email, String password) => StaffDaos.CheckLoginforStaff(email, password); 
         public staff GetStaffByEmail(String email)  => StaffDaos.GetStaffByEmail(email);
 
-        public List<staff> SearchByType(string Status) => StaffDaos.getStaffAvailable(Status)
+        public List<staff> SearchByType(string Status) => StaffDaos.getStaffAvailable(Status);
 
 
     }
