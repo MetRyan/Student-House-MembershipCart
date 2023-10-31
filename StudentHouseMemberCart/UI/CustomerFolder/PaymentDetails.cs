@@ -10,18 +10,14 @@ using System.Windows.Forms;
 
 namespace UI.Customer
 {
-    public partial class Payments : Form
+    public partial class PaymentDetails : Form
     {
-        public Payments()
+        public PaymentDetails()
         {
             InitializeComponent();
         }
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }

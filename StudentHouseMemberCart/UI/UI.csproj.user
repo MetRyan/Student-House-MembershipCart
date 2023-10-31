@@ -16,6 +16,12 @@
     <Compile Update="CustomerFolder\Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CustomerFolder\PaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomerFolder\PaymentsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CustomerFolder\ProductDetail.cs">
       <SubType>Form</SubType>
     </Compile>
