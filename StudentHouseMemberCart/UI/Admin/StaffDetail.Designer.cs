@@ -40,14 +40,16 @@
             txtStaffName = new TextBox();
             txtEmail = new TextBox();
             txtPhone = new TextBox();
-            comboBox1 = new ComboBox();
+            cbStatus = new ComboBox();
             txtPassword = new TextBox();
             dtpdob = new DateTimePicker();
-            comboBox2 = new ComboBox();
+            cbSex = new ComboBox();
             lbAddress = new Label();
             txtAdress = new TextBox();
             label9 = new Label();
             pictureBox1 = new PictureBox();
+            btnSave = new Button();
+            btnCancel = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -160,14 +162,14 @@
             txtPhone.TabIndex = 11;
             txtPhone.TextChanged += txtPhone_TextChanged;
             // 
-            // comboBox1
+            // cbStatus
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "true", "false" });
-            comboBox1.Location = new Point(541, 299);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(251, 28);
-            comboBox1.TabIndex = 12;
+            cbStatus.FormattingEnabled = true;
+            cbStatus.Items.AddRange(new object[] { "true", "false" });
+            cbStatus.Location = new Point(541, 299);
+            cbStatus.Name = "cbStatus";
+            cbStatus.Size = new Size(251, 28);
+            cbStatus.TabIndex = 12;
             // 
             // txtPassword
             // 
@@ -184,14 +186,14 @@
             dtpdob.Size = new Size(250, 27);
             dtpdob.TabIndex = 14;
             // 
-            // comboBox2
+            // cbSex
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "male", "female" });
-            comboBox2.Location = new Point(542, 443);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(249, 28);
-            comboBox2.TabIndex = 15;
+            cbSex.FormattingEnabled = true;
+            cbSex.Items.AddRange(new object[] { "male", "female" });
+            cbSex.Location = new Point(542, 443);
+            cbSex.Name = "cbSex";
+            cbSex.Size = new Size(249, 28);
+            cbSex.TabIndex = 15;
             // 
             // lbAddress
             // 
@@ -228,25 +230,46 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._1877954_200;
-            pictureBox1.Location = new Point(75, 299);
+            pictureBox1.Location = new Point(79, 273);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(196, 198);
             pictureBox1.TabIndex = 19;
             pictureBox1.TabStop = false;
+            // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(42, 509);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(119, 44);
+            btnSave.TabIndex = 20;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
+            // 
+            // btnCancel
+            // 
+            btnCancel.Location = new Point(191, 509);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(119, 44);
+            btnCancel.TabIndex = 21;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
             // 
             // StaffDetail
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(832, 565);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
             Controls.Add(pictureBox1);
             Controls.Add(label9);
             Controls.Add(txtAdress);
             Controls.Add(lbAddress);
-            Controls.Add(comboBox2);
+            Controls.Add(cbSex);
             Controls.Add(dtpdob);
             Controls.Add(txtPassword);
-            Controls.Add(comboBox1);
+            Controls.Add(cbStatus);
             Controls.Add(txtPhone);
             Controls.Add(txtEmail);
             Controls.Add(txtStaffName);
@@ -261,6 +284,7 @@
             Controls.Add(label1);
             Name = "StaffDetail";
             Text = "StaffDetail";
+            Load += StaffDetail_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -280,13 +304,15 @@
         private TextBox txtStaffName;
         private TextBox txtEmail;
         private TextBox txtPhone;
-        private ComboBox comboBox1;
+        private ComboBox cbStatus;
         private TextBox txtPassword;
         private DateTimePicker dtpdob;
-        private ComboBox comboBox2;
+        private ComboBox cbSex;
         private Label lbAddress;
         private TextBox txtAdress;
         private Label label9;
         private PictureBox pictureBox1;
+        private Button btnSave;
+        private Button btnCancel;
     }
 }

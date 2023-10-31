@@ -1,4 +1,4 @@
-//dotnet ef dbcontext scaffold “Server=LAPTOP-RFJCRS8T;Database=ServicesPackageShopping; Uid=sa; Pwd=sa” Microsoft.EntityFrameworkCore.SqlServer --output-dir ./Models
+//dotnet ef dbcontext scaffold “Server=LAPTOP-RFJCRS8T;Database=StudentHouseMembership; Uid=sa; Pwd=sa” Microsoft.EntityFrameworkCore.SqlServer --output-dir ./
 {
   "AdminAccount": {
     "Email": "Quang@gmail.com",

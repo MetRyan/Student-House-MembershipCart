@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace BussinenssObject.Models
+namespace BussinenssObject.Model
 {
     public partial class StudentHouseMembershipContext : DbContext
     {
@@ -268,6 +268,8 @@ namespace BussinenssObject.Models
                 entity.Property(e => e.StaffId)
                     .ValueGeneratedNever()
                     .HasColumnName("StaffID");
+
+                entity.Property(e => e.Address).HasMaxLength(50);
 
                 entity.Property(e => e.Dob)
                     .HasColumnType("date")

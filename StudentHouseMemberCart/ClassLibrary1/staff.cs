@@ -14,6 +14,7 @@ namespace BussinenssObject
         public string? Status { get; set; }
         public int? ServiceId { get; set; }
         public string Password { get; set; } = null!;
+        public string? Address { get; set; }
 
         public virtual Service? Service { get; set; }
     }
