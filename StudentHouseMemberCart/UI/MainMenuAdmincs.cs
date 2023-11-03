@@ -104,7 +104,7 @@ namespace UI
 
         private void btnCustomerManagement_Click(object sender, EventArgs e)
         {
-            OpenChildfrom(new Admin.frmCustomerManagement(), sender);
+            OpenChildfrom(new Admin.CustomerManagement(), sender);
 
         }
 

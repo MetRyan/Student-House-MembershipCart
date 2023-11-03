@@ -1,4 +1,4 @@
-﻿using BussinenssObject.Models;
+﻿using BussinenssObject;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAOS

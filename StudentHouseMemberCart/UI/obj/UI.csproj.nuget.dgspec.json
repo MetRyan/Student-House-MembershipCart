@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\1git\\StudentHouseMemberCart\\UI\\UI.csproj": {}
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\UI\\UI.csproj": {}
   },
   "projects": {
-    "Z:\\1git\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\1git\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
         "projectName": "BussinenssObject",
-        "projectPath": "Z:\\1git\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
-        "packagesPath": "C:\\Users\\ASUS ROG\\.nuget\\packages\\",
-        "outputPath": "Z:\\1git\\StudentHouseMemberCart\\ClassLibrary1\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,24 +81,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "Z:\\1git\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\1git\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
         "projectName": "DAOS",
-        "projectPath": "Z:\\1git\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
-        "packagesPath": "C:\\Users\\ASUS ROG\\.nuget\\packages\\",
-        "outputPath": "Z:\\1git\\StudentHouseMemberCart\\DAOS\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -108,15 +107,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "Z:\\1git\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
-                "projectPath": "Z:\\1git\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj"
+              "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj": {
+                "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\ClassLibrary1\\BussinenssObject.csproj"
               }
             }
           }
@@ -146,24 +144,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "Z:\\1git\\StudentHouseMemberCart\\Repository\\Repository.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\1git\\StudentHouseMemberCart\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "Z:\\1git\\StudentHouseMemberCart\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\ASUS ROG\\.nuget\\packages\\",
-        "outputPath": "Z:\\1git\\StudentHouseMemberCart\\Repository\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,15 +170,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "Z:\\1git\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
-                "projectPath": "Z:\\1git\\StudentHouseMemberCart\\DAOS\\DAOS.csproj"
+              "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj": {
+                "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\DAOS\\DAOS.csproj"
               }
             }
           }
@@ -210,24 +207,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "Z:\\1git\\StudentHouseMemberCart\\UI\\UI.csproj": {
+    "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\1git\\StudentHouseMemberCart\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "Z:\\1git\\StudentHouseMemberCart\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\ASUS ROG\\.nuget\\packages\\",
-        "outputPath": "Z:\\1git\\StudentHouseMemberCart\\UI\\obj\\",
+        "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\wew91\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wew91\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -236,15 +233,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "Z:\\1git\\StudentHouseMemberCart\\Repository\\Repository.csproj": {
-                "projectPath": "Z:\\1git\\StudentHouseMemberCart\\Repository\\Repository.csproj"
+              "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\GitHub\\StudentHouse\\Student-House-MembershipCart\\StudentHouseMemberCart\\Repository\\Repository.csproj"
               }
             }
           }
@@ -277,7 +273,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

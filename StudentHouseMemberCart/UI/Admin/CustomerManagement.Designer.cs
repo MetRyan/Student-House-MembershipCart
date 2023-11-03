@@ -1,6 +1,6 @@
 ﻿namespace UI.Admin
 {
-    partial class frmCustomerManagement
+    partial class CustomerManagement
     {
         /// <summary>
         /// Required designer variable.
